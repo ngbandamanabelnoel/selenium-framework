@@ -12,4 +12,8 @@ public class CheckoutTest extends BaseTest {
 	///
 	///ddggdgxn
 
+	// nume : 1 2 4 5 
+	
+	
+
 }
