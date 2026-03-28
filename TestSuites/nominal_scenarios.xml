@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite parallel="tests" name="Suite">
+	<listeners>
+		<listener class-name="SeleniumLearning.SeleniumFrameworkLearning.TestComponents.TestListeners"/>
+	</listeners>
+  <test parallel="methods" thread-count="5" name="Login Page Test">
+    <classes>
+      <class name="SeleniumLearning.SeleniumFrameworkLearning.LandingTest"/>
+    </classes>
+  </test> <!-- Test -->
+    <test thread-count="5" name="Cart Dashboard Test">
+    <classes>
+      <class name="SeleniumLearning.SeleniumFrameworkLearning.CartDashboardTest"/>
+    </classes>
+  </test> <!-- Test -->
+    <test parallel="methods" thread-count="5" name="Confirmation Page Test">
+    <classes>
+      <class name="SeleniumLearning.SeleniumFrameworkLearning.ConfirmationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test parallel="methods" thread-count="5" name="Ordered Products Page Test">
+  	<classes>
+      <class name="SeleniumLearning.SeleniumFrameworkLearning.OrderDashboardTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
